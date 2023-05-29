@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE CONFIGURATION [
+<!ELEMENT CONFIGURATION (ATTRIBUTE*,OBJECT*)>
+<!ELEMENT OBJECT (ATTRIBUTE*,OBJECT*)>
+<!ATTLIST OBJECT
+        Type CDATA #REQUIRED
+        Hash CDATA #IMPLIED>
+<!ELEMENT ATTRIBUTE (#PCDATA)>
+<!ATTLIST ATTRIBUTE
+        Name CDATA #REQUIRED
+        Type CDATA #REQUIRED>
+]>
+<CONFIGURATION>
+  <ATTRIBUTE Name="FormatVersion" Type="string">V11.00.01.00_13.01.00.01</ATTRIBUTE>
+  <ATTRIBUTE Name="Tool" Type="string">SIMIT</ATTRIBUTE>
+  <ATTRIBUTE Name="Created" Type="string">5/27/2023 10:43:34 AM</ATTRIBUTE>
+  <OBJECT Type="VCCONFIGURATION">
+    <ATTRIBUTE Name="Namespace" Type="string">SIMIT</ATTRIBUTE>
+    <OBJECT Type="PAHost">
+      <ATTRIBUTE Name="Name" Type="string">DESKTOP-NFG78LE</ATTRIBUTE>
+      <ATTRIBUTE Name="IP" Type="string">192.168.0.100</ATTRIBUTE>
+      <ATTRIBUTE Name="CommunicationInterface" Type="string">TCP</ATTRIBUTE>
+      <ATTRIBUTE Name="Port" Type="int">50000</ATTRIBUTE>
+      <ATTRIBUTE Name="LocalHost" Type="bool">true</ATTRIBUTE>
+      <OBJECT Type="PLCSIMAdvanced">
+        <ATTRIBUTE Name="ID" Type="int">1</ATTRIBUTE>
+        <ATTRIBUTE Name="StationID" Type="int">1</ATTRIBUTE>
+        <ATTRIBUTE Name="IsManagedInternally" Type="bool">true</ATTRIBUTE>
+        <ATTRIBUTE Name="PaInstanceName" Type="string">SIMIT_S7-1500-ET200MP station_1</ATTRIBUTE>
+      </OBJECT>
+    </OBJECT>
+  </OBJECT>
+  <OBJECT Type="HWCONFIGURATION">
+    <ATTRIBUTE Name="ProjectName" Type="string">HeThongPhaMau_Demo01</ATTRIBUTE>
+    <ATTRIBUTE Name="ProjectPath" Type="string">E:\Khanh\BaiHoc\K222\DoAN\HTPhaMau\HeThongPhaMau_Demo01\HeThongPhaMau_Demo01.ap18</ATTRIBUTE>
+    <OBJECT Type="HWStation">
+      <ATTRIBUTE Name="Name" Type="string">S7-1500/ET200MP station_1</ATTRIBUTE>
+      <ATTRIBUTE Name="Type" Type="string">System:Device.S71500</ATTRIBUTE>
+      <ATTRIBUTE Name="StationID" Type="int">1</ATTRIBUTE>
+      <ATTRIBUTE Name="ModuleTypeInPLCSIMAdvanced" Type="string">0x000005DC</ATTRIBUTE>
+      <OBJECT Type="HWIOSystem">
+        <ATTRIBUTE Name="Name" Type="string">CentralRack</ATTRIBUTE>
+        <ATTRIBUTE Name="IOSystemNumber" Type="int">0</ATTRIBUTE>
+        <ATTRIBUTE Name="IOSystemType" Type="string">Central</ATTRIBUTE>
+        <OBJECT Type="HWDevice">
+          <ATTRIBUTE Name="Name" Type="string">PLC_1</ATTRIBUTE>
+          <ATTRIBUTE Name="StationNumber" Type="int">0</ATTRIBUTE>
+          <ATTRIBUTE Name="HwIdentifier" Type="int">32</ATTRIBUTE>
+          <OBJECT Type="HWModule">
+            <ATTRIBUTE Name="Name" Type="string">PLC_1</ATTRIBUTE>
+            <ATTRIBUTE Name="SlotNumber" Type="int">1</ATTRIBUTE>
+            <ATTRIBUTE Name="MLFB" Type="string">6ES7 512-1CK01-0AB0</ATTRIBUTE>
+            <ATTRIBUTE Name="HwIdentifier" Type="int">48</ATTRIBUTE>
+            <ATTRIBUTE Name="ModuleType" Type="string">CPU</ATTRIBUTE>
+            <ATTRIBUTE Name="CPUType" Type="string">CPU1512C-1PN</ATTRIBUTE>
+            <ATTRIBUTE Name="CPUFirmware" Type="string">V29</ATTRIBUTE>
+            <OBJECT Type="HWNetworkParameter">
+              <ATTRIBUTE Name="Name" Type="string">X1</ATTRIBUTE>
+              <ATTRIBUTE Name="IPAddress" Type="string">192.168.0.101</ATTRIBUTE>
+              <ATTRIBUTE Name="SubnetMask" Type="string">255.255.255.0</ATTRIBUTE>
+              <ATTRIBUTE Name="Gateway" Type="string">0.0.0.0</ATTRIBUTE>
+              <ATTRIBUTE Name="NameOfStation" Type="string">plc_1.profinet interface_1</ATTRIBUTE>
+            </OBJECT>
+            <OBJECT Type="HWSubModule">
+              <ATTRIBUTE Name="Name" Type="string">CPU display_1</ATTRIBUTE>
+              <ATTRIBUTE Name="SubSlotNumber" Type="int">3</ATTRIBUTE>
+              <ATTRIBUTE Name="HwIdentifier" Type="int">54</ATTRIBUTE>
+            </OBJECT>
+            <OBJECT Type="HWSubModule">
+              <ATTRIBUTE Name="Name" Type="string">Card reader/writer_1</ATTRIBUTE>
+              <ATTRIBUTE Name="SubSlotNumber" Type="int">4</ATTRIBUTE>
+              <ATTRIBUTE Name="HwIdentifier" Type="int">51</ATTRIBUTE>
+            </OBJECT>
+            <OBJECT Type="HWSubModule">
+              <ATTRIBUTE Name="Name" Type="string">AI 5/AQ 2_1</ATTRIBUTE>
+              <ATTRIBUTE Name="SubSlotNumber" Type="int">8</ATTRIBUTE>
+              <ATTRIBUTE Name="HwIdentifier" Type="int">257</ATTRIBUTE>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">IN</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">80</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">OUT</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">32</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+            </OBJECT>
+            <OBJECT Type="HWSubModule">
+              <ATTRIBUTE Name="Name" Type="string">DI 16/DQ 16_1</ATTRIBUTE>
+              <ATTRIBUTE Name="SubSlotNumber" Type="int">9</ATTRIBUTE>
+              <ATTRIBUTE Name="HwIdentifier" Type="int">258</ATTRIBUTE>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">IN</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">10</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">16</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">OUT</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">4</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">16</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+            </OBJECT>
+            <OBJECT Type="HWSubModule">
+              <ATTRIBUTE Name="Name" Type="string">DI 16/DQ 16_2</ATTRIBUTE>
+              <ATTRIBUTE Name="SubSlotNumber" Type="int">10</ATTRIBUTE>
+              <ATTRIBUTE Name="HwIdentifier" Type="int">259</ATTRIBUTE>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">IN</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">12</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">16</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">OUT</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">6</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">16</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+            </OBJECT>
+            <OBJECT Type="HWSubModule">
+              <ATTRIBUTE Name="Name" Type="string">HSC_1</ATTRIBUTE>
+              <ATTRIBUTE Name="SubSlotNumber" Type="int">16</ATTRIBUTE>
+              <ATTRIBUTE Name="HwIdentifier" Type="int">260</ATTRIBUTE>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">IN</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">14</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">128</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">OUT</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">8</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">96</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+            </OBJECT>
+            <OBJECT Type="HWSubModule">
+              <ATTRIBUTE Name="Name" Type="string">HSC_2</ATTRIBUTE>
+              <ATTRIBUTE Name="SubSlotNumber" Type="int">17</ATTRIBUTE>
+              <ATTRIBUTE Name="HwIdentifier" Type="int">261</ATTRIBUTE>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">IN</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">30</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">128</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">OUT</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">20</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">96</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+            </OBJECT>
+            <OBJECT Type="HWSubModule">
+              <ATTRIBUTE Name="Name" Type="string">HSC_3</ATTRIBUTE>
+              <ATTRIBUTE Name="SubSlotNumber" Type="int">18</ATTRIBUTE>
+              <ATTRIBUTE Name="HwIdentifier" Type="int">262</ATTRIBUTE>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">IN</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">46</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">128</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">OUT</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">32</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">96</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+            </OBJECT>
+            <OBJECT Type="HWSubModule">
+              <ATTRIBUTE Name="Name" Type="string">HSC_4</ATTRIBUTE>
+              <ATTRIBUTE Name="SubSlotNumber" Type="int">19</ATTRIBUTE>
+              <ATTRIBUTE Name="HwIdentifier" Type="int">263</ATTRIBUTE>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">IN</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">62</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">128</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">OUT</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">44</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">96</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+            </OBJECT>
+            <OBJECT Type="HWSubModule">
+              <ATTRIBUTE Name="Name" Type="string">HSC_5</ATTRIBUTE>
+              <ATTRIBUTE Name="SubSlotNumber" Type="int">20</ATTRIBUTE>
+              <ATTRIBUTE Name="HwIdentifier" Type="int">264</ATTRIBUTE>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">IN</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">78</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">128</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">OUT</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">56</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">96</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+            </OBJECT>
+            <OBJECT Type="HWSubModule">
+              <ATTRIBUTE Name="Name" Type="string">HSC_6</ATTRIBUTE>
+              <ATTRIBUTE Name="SubSlotNumber" Type="int">21</ATTRIBUTE>
+              <ATTRIBUTE Name="HwIdentifier" Type="int">265</ATTRIBUTE>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">IN</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">94</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">128</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">OUT</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">68</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">96</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+            </OBJECT>
+            <OBJECT Type="HWSubModule">
+              <ATTRIBUTE Name="Name" Type="string">Pulse_1</ATTRIBUTE>
+              <ATTRIBUTE Name="SubSlotNumber" Type="int">32</ATTRIBUTE>
+              <ATTRIBUTE Name="HwIdentifier" Type="int">266</ATTRIBUTE>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">IN</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">110</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">32</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">OUT</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">80</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">96</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+            </OBJECT>
+            <OBJECT Type="HWSubModule">
+              <ATTRIBUTE Name="Name" Type="string">Pulse_2</ATTRIBUTE>
+              <ATTRIBUTE Name="SubSlotNumber" Type="int">33</ATTRIBUTE>
+              <ATTRIBUTE Name="HwIdentifier" Type="int">267</ATTRIBUTE>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">IN</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">114</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">32</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">OUT</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">92</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">96</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+            </OBJECT>
+            <OBJECT Type="HWSubModule">
+              <ATTRIBUTE Name="Name" Type="string">Pulse_3</ATTRIBUTE>
+              <ATTRIBUTE Name="SubSlotNumber" Type="int">34</ATTRIBUTE>
+              <ATTRIBUTE Name="HwIdentifier" Type="int">268</ATTRIBUTE>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">IN</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">118</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">32</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">OUT</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">104</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">96</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+            </OBJECT>
+            <OBJECT Type="HWSubModule">
+              <ATTRIBUTE Name="Name" Type="string">Pulse_4</ATTRIBUTE>
+              <ATTRIBUTE Name="SubSlotNumber" Type="int">35</ATTRIBUTE>
+              <ATTRIBUTE Name="HwIdentifier" Type="int">269</ATTRIBUTE>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">IN</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">122</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">32</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWAddress">
+                <ATTRIBUTE Name="Direction" Type="string">OUT</ATTRIBUTE>
+                <ATTRIBUTE Name="LogicalAddress" Type="int">116</ATTRIBUTE>
+                <ATTRIBUTE Name="SubAddress" Type="int">0</ATTRIBUTE>
+                <ATTRIBUTE Name="Length" Type="int">96</ATTRIBUTE>
+                <ATTRIBUTE Name="LengthSize" Type="string">BIT</ATTRIBUTE>
+              </OBJECT>
+            </OBJECT>
+            <OBJECT Type="HWSubModule">
+              <ATTRIBUTE Name="Name" Type="string">OPC UA_1</ATTRIBUTE>
+              <ATTRIBUTE Name="SubSlotNumber" Type="int">254</ATTRIBUTE>
+              <ATTRIBUTE Name="HwIdentifier" Type="int">117</ATTRIBUTE>
+            </OBJECT>
+            <OBJECT Type="HWSubModule">
+              <ATTRIBUTE Name="Name" Type="string">PROFINET interface_1</ATTRIBUTE>
+              <ATTRIBUTE Name="SubSlotNumber" Type="int">32768</ATTRIBUTE>
+              <ATTRIBUTE Name="HwIdentifier" Type="int">64</ATTRIBUTE>
+            </OBJECT>
+            <OBJECT Type="HWSymbolTable">
+              <ATTRIBUTE Name="Name" Type="string">Output</ATTRIBUTE>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">Q_Van_Rot</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">Q4.4</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">Q_Van_Water</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">Q4.5</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">Q_Van_Xa</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">Q4.6</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">Q_Van_Khi_1</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">Q4.7</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">Q_Van_Khi_2</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">Q5.0</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">Q_Van_Khi_3</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">Q5.1</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">Q_Khuay</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">Q5.2</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">Q_BT</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">Q5.3</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">Q_Fault</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">Q5.4</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">Q_Stop</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">Q5.5</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">Q_Running</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">Q5.6</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">Q_SpeedConveyor</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">QD70</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Real</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">Q_ValveColor_Red</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">Q4.0</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">Q_ValveColor_Yellow</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">Q4.1</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">Q_ValveColor_Blue</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">Q4.2</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">Q_SpeedKhuay</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">QD74</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Real</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">Q_ProcessDone</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">Q4.3</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+            </OBJECT>
+            <OBJECT Type="HWSymbolTable">
+              <ATTRIBUTE Name="Name" Type="string">Input</ATTRIBUTE>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">I_Start</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">I0.0</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">I_Stop</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">I0.1</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">I_Reset</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">I0.2</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">I_LevelTank</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">ID100</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Real</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">I_SensorA1</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">I0.3</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">I_SensorA2</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">I0.4</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">I_SensorA3</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">I0.5</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">I_SensorB1</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">I0.6</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+              <OBJECT Type="HWSymbolSignal">
+                <ATTRIBUTE Name="Symbol" Type="string">I_TankRot</ATTRIBUTE>
+                <ATTRIBUTE Name="Address" Type="string">I0.7</ATTRIBUTE>
+                <ATTRIBUTE Name="Datatype" Type="string">Bool</ATTRIBUTE>
+                <ATTRIBUTE Name="Comment" Type="string"></ATTRIBUTE>
+              </OBJECT>
+            </OBJECT>
+          </OBJECT>
+        </OBJECT>
+      </OBJECT>
+    </OBJECT>
+  </OBJECT>
+</CONFIGURATION>
